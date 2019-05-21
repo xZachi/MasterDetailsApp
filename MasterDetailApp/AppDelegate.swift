@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let detailNavigationController = splitViewController.viewControllers.last as? UINavigationController,
             let detailViewController = detailNavigationController.topViewController as? DetailViewController
             else { fatalError() }
+        detailViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
+        detailViewController.navigationItem.leftItemsSupplementBackButton = true
         masterViewController.delegate = detailViewController
         return true
     }

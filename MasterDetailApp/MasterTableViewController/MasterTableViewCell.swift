@@ -37,6 +37,21 @@ class MasterTableViewCell: UITableViewCell {
         }
     }
     
+    override func setHighlighted(_ highlighted: Bool, animated: Bool) {
+        if highlighted {
+            contentView.backgroundColor = .blue
+            textLabel?.textColor = .white
+        } else {
+            if isSelected {
+                contentView.backgroundColor = .red
+                textLabel?.textColor = .white
+            } else {
+                contentView.backgroundColor = .white
+                textLabel?.textColor = .black
+            }
+        }
+    }
+    
     //MARK: - Private Methods
     
     private func setContent() {

@@ -43,15 +43,6 @@ class MasterTableViewController: UITableViewController, UISplitViewControllerDel
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let controller = segue.destination
-        if UIDevice.current.userInterfaceIdiom == .pad {
-            //controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
-            //controller.navigationItem.leftItemsSupplementBackButton = true
-        }
-        
-    }
-    
     // MARK: - Private Methods
     
     private func selectFirstRow() {
@@ -79,9 +70,7 @@ class MasterTableViewController: UITableViewController, UISplitViewControllerDel
             cell.item = masterItem
             return cell
         }
-        
         return UITableViewCell()
-        
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -93,14 +82,7 @@ class MasterTableViewController: UITableViewController, UISplitViewControllerDel
         }
     }
     
-    override func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
-        if let cell = tableView.cellForRow(at: indexPath) {
-            cell.contentView.backgroundColor = .blue
-            cell.textLabel?.textColor = .white
-        }
-    }
-    
-    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
+    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController:UIViewController, onto primaryViewController:UIViewController) -> Bool {
         return true
     }
 }
