@@ -38,7 +38,7 @@
 		7A4B89672292F1F9002EE1BD /* MasterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterItem.swift; sourceTree = "<group>"; };
 		7A4B896A2292F22B002EE1BD /* NetLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetLayer.swift; sourceTree = "<group>"; };
 		7A4B896C2292F50C002EE1BD /* MasterTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTableViewModel.swift; sourceTree = "<group>"; };
-		7A4B896E2292F9A6002EE1BD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		7A4B896E2292F9A6002EE1BD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7A4B897022930004002EE1BD /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		7A4B89722293006F002EE1BD /* DetailsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsItem.swift; sourceTree = "<group>"; };
 		7A4B89752293155C002EE1BD /* MasterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTableViewCell.swift; sourceTree = "<group>"; };
